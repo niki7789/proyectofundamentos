@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Producto</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form id="registroForm">
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" required><br>
+                
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" required>
+                    <option value="herramientas">Herramientas</option>
+                    <option value="materiales">Materiales de Construcción</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select><br>
+                
+                <label for="imagen">Imagen del Producto:</label>
+                <input type="file" id="imagen" accept="image/*" required><br>
+                
+                <label for="codigo">Código de Producto:</label>
+                <input type="text" id="codigo" required><br>
+                
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" required><br>
+                
+                <!-- Agrega campos adicionales según lo requiera tu proyecto -->
+                
+                <button type="submit">Registrar Producto</button>
+                <button type="reset">Limpiar Campos</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ferretería Galindo. .</p>
+    </footer>
+</div>
+
+<script src="main.js"></script> 
+</body>
+</html>
