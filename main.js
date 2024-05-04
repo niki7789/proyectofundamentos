@@ -1,4 +1,4 @@
-const productos = [
+let productos = [
     { 
         nombre: "Martillo",
         categoria: "Herramientas",
@@ -501,3 +501,55 @@ const productos = [
         peso: "3 kg"
     }
 ];
+
+const limpiar = () => {
+    document.getElementById("nombre").value = "";
+    document.getElementById("categoria").value = "";
+    document.getElementById("imagen").value = "";
+    document.getElementById("codigo").value = "";
+    document.getElementById("precio").value = "";
+    document.getElementById("marca").value = "";
+    document.getElementById("material").value = "";
+    document.getElementById("peso").value = "";
+}
+
+const insertaArreglo = (event) =>{
+
+    event.preventDefault();
+
+    const nombre = document.getElementById("nombre");
+    const categoria = document.getElementById("categoria");
+    const imagen = document.getElementById("imagen");
+    const codigo = document.getElementById("codigo");
+    const precio = document.getElementById("precio");
+    const marca = document.getElementById("marca");
+    const material = document.getElementById("material");
+    const peso = document.getElementById("peso");
+
+    if (nombre && categoria && imagen && codigo && precio && marca && material && peso) {
+        const nuevoValor = {
+            nombre: nombre,
+            categoria: categoria,
+            imagen: imagen,
+            codigo: codigo,
+            precio: precio,
+            marca: marca,
+            material: material,
+            peso: peso
+        }
+
+        productos.push(nuevoValor);
+        console.log(nuevoValor);
+
+        document.getElementById("registroForm").reset();
+
+        alert("Producto ingresado correctamente!!!")
+    }else {
+
+        alert("Llene el formulario Por favor!");
+
+    }
+
+
+    
+}
