@@ -2,7 +2,7 @@ let productos = [
     { 
         nombre: "Martillo",
         categoria: "Herramientas",
-        imagen: "martillo.jpg",
+        imagen: "https://thumbs.dreamstime.com/z/martillo-11642945.jpg?ct=jpeg",
         codigo: "001",
         precio: 35000,
         marca: "MarcaX",
@@ -12,7 +12,7 @@ let productos = [
     { 
         nombre: "Destornillador",
         categoria: "Herramientas",
-        imagen: "destornillador.jpg",
+        imagen: "https://www.ferreteriasuprema.com/cdn/shop/products/Destornilladorplanocontopetraseroparagolpear_1200x1200.jpg?v=1609951438",
         codigo: "002",
         precio: 19000,
         marca: "MarcaY",
@@ -22,7 +22,7 @@ let productos = [
     { 
         nombre: "Cincel",
         categoria: "Herramientas",
-        imagen: "cincel.jpg",
+        imagen: "https://egberscompany.com/wp-content/uploads/2020/06/12127.jpg",
         codigo: "003",
         precio: 18000,
         marca: "MarcaZ",
@@ -32,7 +32,7 @@ let productos = [
     { 
         nombre: "Sierra Circular",
         categoria: "Herramientas",
-        imagen: "sierra_circular.jpg",
+        imagen: "https://www.atrial.com.co/wp-content/uploads/2022/02/sierra-circular-compacta-4-1-2-750-w-82b.jpg",
         codigo: "004",
         precio: 319000,
         marca: "MarcaA",
@@ -42,7 +42,7 @@ let productos = [
     { 
         nombre: "Cinta Métrica",
         categoria: "Herramientas",
-        imagen: "cinta_metrica.jpg",
+        imagen: "https://dstamaria.com/cdn/shop/products/cinta-metrica.jpg?v=1669393487",
         codigo: "005",
         precio: 11900,
         marca: "MarcaB",
@@ -52,7 +52,7 @@ let productos = [
     { 
         nombre: "Taladro Percutor",
         categoria: "Herramientas",
-        imagen: "taladro_percutor.jpg",
+        imagen: "https://ferreterianacional.com.co/cdn/shop/products/DWD520_1_1200x1200.png?v=1586391588",
         codigo: "006",
         precio: 125000,
         marca: "MarcaC",
@@ -62,7 +62,7 @@ let productos = [
     { 
         nombre: "Llave de Boca",
         categoria: "Herramientas",
-        imagen: "llave_boca.jpg",
+        imagen: "https://disfecol.com.co/wp-content/uploads/2023/01/6Z.2.png",
         codigo: "007",
         precio: 24000,
         marca: "MarcaD",
@@ -72,7 +72,7 @@ let productos = [
     { 
         nombre: "Brocas para Madera",
         categoria: "Herramientas",
-        imagen: "brocas_madera.jpg",
+        imagen: "https://hechitools.com/cdn/shop/products/D-23204_e9dde946-2429-464a-b3fd-bcf5bfafe3f6.jpg?v=1615915898",
         codigo: "008",
         precio: 17000,
         marca: "MarcaE",
@@ -82,7 +82,7 @@ let productos = [
     { 
         nombre: "Martillo Percutor",
         categoria: "Herramientas",
-        imagen: "martillo_percutor.jpg",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdvxlRUfjDy3ZOmHNRXxC9GqbLUElqIy_JYA&s",
         codigo: "009",
         precio: 59000,
         marca: "MarcaF",
@@ -92,7 +92,7 @@ let productos = [
     { 
         nombre: "Cinta de Carpintero",
         categoria: "Herramientas",
-        imagen: "cinta_carpintero.jpg",
+        imagen: "https://m.media-amazon.com/images/I/31r6LxVe+DL._AC_UF894,1000_QL80_.jpg",
         codigo: "010",
         precio: 13500,
         marca: "MarcaG",
@@ -102,7 +102,7 @@ let productos = [
     { 
         nombre: "Escalera de Aluminio",
         categoria: "Herramientas",
-        imagen: "escalera_aluminio.jpg",
+        imagen: "https://www.ferreteriasamir.com/10167-large_default/escalera-de-aluminio-de-5-peldanos-183-mts-certificada-referencia-stl-6-r.jpg",
         codigo: "011",
         precio: 89000,
         marca: "MarcaH",
@@ -112,7 +112,7 @@ let productos = [
     { 
         nombre: "Serrucho",
         categoria: "Herramientas",
-        imagen: "serrucho.jpg",
+        imagen: "https://www.shutterstock.com/image-photo/saw-isolated-on-white-background-260nw-425591179.jpg",
         codigo: "012",
         precio: 18500,
         marca: "MarcaI",
@@ -122,7 +122,7 @@ let productos = [
     { 
         nombre: "Nivel de Burbuja",
         categoria: "Herramientas",
-        imagen: "nivel_burbuja.jpg",
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_816314-MLU71133540613_082023-O.webp",
         codigo: "013",
         precio: 18500,
         marca: "MarcaJ",
@@ -132,7 +132,7 @@ let productos = [
     { 
         nombre: "Taladro Inalámbrico",
         categoria: "Herramientas",
-        imagen: "taladro_inalambrico.jpg",
+        imagen: "https://belltec.com.co/13261-large_default/taladro-inalambrico-percutor-38-12v-2-bat-makita-hp333dwye.jpg",
         codigo: "014",
         precio: 179000,
         marca: "MarcaK",
@@ -142,7 +142,7 @@ let productos = [
     { 
         nombre: "Pinzas de Electricista",
         categoria: "Herramientas",
-        imagen: "pinzas_electricista.jpg",
+        imagen: "https://www.fisa.com.co/298-home_default/pinzas-para-electricista-268g-urrea.jpg",
         codigo: "015",
         precio: 25000,
         marca: "MarcaL",
@@ -152,7 +152,7 @@ let productos = [
     { 
         nombre: "Sierra de Calar",
         categoria: "Herramientas",
-        imagen: "sierra_calar.jpg",
+        imagen: "https://belltec.com.co/17038-large_default/sierra-caladora-720w-vv-sisorbital-baja-vibraci.jpg",
         codigo: "016",
         precio: 129000,
         marca: "MarcaM",
@@ -162,7 +162,7 @@ let productos = [
     { 
         nombre: "Cepillo Eléctrico",
         categoria: "Herramientas",
-        imagen: "cepillo_electrico.jpg",
+        imagen: "https://belltec.com.co/19909-large_default/cepillo-electrico-para-madera-total-1050w-120v-utl1108236.jpg",
         codigo: "017",
         precio: 145000,
         marca: "MarcaN",
@@ -172,7 +172,7 @@ let productos = [
     { 
         nombre: "Llave de Impacto",
         categoria: "Herramientas",
-        imagen: "llave_impacto.jpg",
+        imagen: "https://ferreteriaherkules.com.co/wp-content/uploads/2023/07/Llave-de-impacto-Truper-IMP-1-2N.jpg",
         codigo: "018",
         precio: 195000,
         marca: "MarcaO",
@@ -182,7 +182,7 @@ let productos = [
     { 
         nombre: "Alicate Universal",
         categoria: "Herramientas",
-        imagen: "alicate_universal.jpg",
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_963067-MCO49276888819_032022-O.webp",
         codigo: "019",
         precio: 19000,
         marca: "MarcaP",
@@ -192,7 +192,7 @@ let productos = [
     { 
         nombre: "Broca de Metal",
         categoria: "Herramientas",
-        imagen: "broca_metal.jpg",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJDpWASWFP_xuYFL2_WInq9PLSpGJtT6X_pg&s",
         codigo: "020",
         precio: 8500,
         marca: "MarcaQ",
@@ -203,7 +203,7 @@ let productos = [
     { 
         nombre: "Cemento Portland",
         categoria: "Materiales de Construcción",
-        imagen: "cemento_portland.jpg",
+        imagen: "https://barracagallinal.com.uy/wp-content/uploads/2020/08/9006-1.jpg",
         codigo: "021",
         precio: 38000,
         marca: "MarcaR",
@@ -213,7 +213,7 @@ let productos = [
     { 
         nombre: "Varilla de Acero",
         categoria: "Materiales de Construcción",
-        imagen: "varilla_acero.jpg",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv1KDa_0YGnASz3TK63y_jemL7KHLlEeKLzg&s",
         codigo: "022",
         precio: 8900,
         marca: "MarcaS",
@@ -223,7 +223,7 @@ let productos = [
     { 
         nombre: "Ladrillo de Arcilla",
         categoria: "Materiales de Construcción",
-        imagen: "ladrillo_arcilla.jpg",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1lHflPnP569NLtzbjufN0vWJV_ZHVhBIURw&s",
         codigo: "023",
         precio: 650,
         marca: "MarcaT",
@@ -233,7 +233,7 @@ let productos = [
     { 
         nombre: "Teja de Barro",
         categoria: "Materiales de Construcción",
-        imagen: "teja_barro.jpg",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThi9oHLZsIWRHpiiGG_bERNcRbYMtzdeVUxA&s",
         codigo: "024",
         precio: 7500,
         marca: "MarcaU",
@@ -243,7 +243,7 @@ let productos = [
     { 
         nombre: "Bloque de Concreto",
         categoria: "Materiales de Construcción",
-        imagen: "bloque_concreto.jpg",
+        imagen: "https://cdnx.jumpseller.com/prefabricados-peniel/image/14043068/resize/540/600?1692219957",
         codigo: "025",
         precio: 1800,
         marca: "MarcaV",
@@ -253,7 +253,7 @@ let productos = [
     { 
         nombre: "Piedra Triturada",
         categoria: "Materiales de Construcción",
-        imagen: "piedra_triturada.jpg",
+        imagen: "https://canterasantarita.com/wp-content/uploads/2021/11/Triturado-1-canteras-santa-rita.jpg",
         codigo: "026",
         precio: 25000,
         marca: "MarcaW",
@@ -263,7 +263,7 @@ let productos = [
     { 
         nombre: "Arena de Río",
         categoria: "Materiales de Construcción",
-        imagen: "arena_rio.jpg",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQScGUkpcPcfIyafvMoPZwsiSCnwhzD12kUrw&s",
         codigo: "027",
         precio: 60000,
         marca: "MarcaX",
@@ -273,7 +273,7 @@ let productos = [
     { 
         nombre: "Cerámica para Pisos",
         categoria: "Materiales de Construcción",
-        imagen: "ceramica_pisos.jpg",
+        imagen: "https://decorceramica.vteximg.com.br/arquivos/ids/203372-800-800/KC04OE1290-Tendidodiagonalpiso.jpg?v=638379218247500000",
         codigo: "028",
         precio: 32000,
         marca: "MarcaY",
@@ -283,7 +283,7 @@ let productos = [
     { 
         nombre: "Plancha de Policarbonato",
         categoria: "Materiales de Construcción",
-        imagen: "plancha_policarbonato.jpg",
+        imagen: "https://www.femoglas.com/wp-content/uploads/2021/04/01-POLICARBONATO-ALVEOLAR-PC.-ALVEOLAR-TRANSPARENTE-04MM.jpg",
         codigo: "029",
         precio: 125000,
         marca: "MarcaZ",
@@ -293,7 +293,7 @@ let productos = [
     { 
         nombre: "Perfiles de Aluminio",
         categoria: "Materiales de Construcción",
-        imagen: "perfiles_aluminio.jpg",
+        imagen: "https://images.squarespace-cdn.com/content/v1/5b5e4e7f1aef1de885070147/1533176286523-4IK4BT6PJK7HNMLKNEA9/Fotolia_47521136_Subscription_Monthly_XXL-1024x640.jpg",
         codigo: "030",
         precio: 58000,
         marca: "MarcaA",
@@ -303,7 +303,7 @@ let productos = [
     { 
         nombre: "Tubo de PVC",
         categoria: "Materiales de Construcción",
-        imagen: "tubo_pvc.jpg",
+        imagen: "https://easycolombia.vtexassets.com/arquivos/ids/196595-800-800?v=638150307572870000&width=800&height=800&aspect=true",
         codigo: "031",
         precio: 18500,
         marca: "MarcaB",
@@ -313,7 +313,7 @@ let productos = [
     { 
         nombre: "Impermeabilizante Asfáltico",
         categoria: "Materiales de Construcción",
-        imagen: "impermeabilizante_asfaltico.jpg",
+        imagen: "https://sikabrasil.com.br/sikaguia/ecu/ec-Sikafill-10-Negro-01253417.png",
         codigo: "032",
         precio: 48000,
         marca: "MarcaC",
@@ -323,7 +323,7 @@ let productos = [
     { 
         nombre: "Láminas de Zinc",
         categoria: "Materiales de Construcción",
-        imagen: "laminas_zinc.jpg",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3vqURxp7cKcCanys8YZfHmAt35F7KrQx95A&s",
         codigo: "033",
         precio: 21500,
         marca: "MarcaD",
@@ -333,7 +333,7 @@ let productos = [
     { 
         nombre: "Bolsa de Cemento Blanco",
         categoria: "Materiales de Construcción",
-        imagen: "cemento_blanco.jpg",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlHOn8ft6mEQYLPyh59kc7jKYDQ2oGFyc5rw&s",
         codigo: "034",
         precio: 42000,
         marca: "MarcaE",
@@ -343,7 +343,7 @@ let productos = [
     { 
         nombre: "Tubo Estructural",
         categoria: "Materiales de Construcción",
-        imagen: "tubo_estructural.jpg",
+        imagen: "https://www.nortemateriales.com.co/wp-content/uploads/2021/03/F-1.jpg",
         codigo: "035",
         precio: 29500,
         marca: "MarcaF",
@@ -353,7 +353,7 @@ let productos = [
     { 
         nombre: "Tablero Contrachapado",
         categoria: "Materiales de Construcción",
-        imagen: "tablero_contrachapado.jpg",
+        imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAlg3Fvi3a4_JuXqMBXDxsSNevhG9Uptb__w&s",
         codigo: "036",
         precio: 85000,
         marca: "MarcaG",
@@ -363,7 +363,7 @@ let productos = [
     { 
         nombre: "Pegamento para Porcelanato",
         categoria: "Materiales de Construcción",
-        imagen: "pegamento_porcelanato.jpg",
+        imagen: "https://admintienda.coval.com.co/backend/admin/backend/web/archivosDelCliente/items/images/ADHESIVOS-IMPERMEABILIZANTES-Y-CEMENTOS-ADHESIVOS-PARA-REVESTIMIENTO-SIKACERAM-PORCELANATO-GRIS--x-25-Kg-SIKA-154220210513054902.jpg",
         codigo: "037",
         precio: 26500,
         marca: "MarcaH",
@@ -373,7 +373,7 @@ let productos = [
     { 
         nombre: "Lija para Madera",
         categoria: "Materiales de Construcción",
-        imagen: "lija_madera.jpg",
+        imagen: "https://toolcraft.com.co/media/catalog/product/cache/5acb921b5de42abe363841164dfef787/t/c/tc2832.jpg",
         codigo: "038",
         precio: 6500,
         marca: "MarcaI",
@@ -383,7 +383,7 @@ let productos = [
     { 
         nombre: "Bloque de Vidrio",
         categoria: "Materiales de Construcción",
-        imagen: "bloque_vidrio.jpg",
+        imagen: "https://vitrolit.com/wp-content/uploads/2017/09/TANGERINE-A-VV-GB2-tx-min.jpg",
         codigo: "039",
         precio: 18500,
         marca: "MarcaJ",
@@ -393,7 +393,7 @@ let productos = [
     { 
         nombre: "Perfil de Hierro Angular",
         categoria: "Materiales de Construcción",
-        imagen: "perfil_hierro_angular.jpg",
+        imagen: "https://hierrosgil.com/wp-content/uploads/2019/10/perfiles-simpleT-300x300.jpg",
         codigo: "040",
         precio: 39000,
         marca: "MarcaK",
@@ -403,7 +403,7 @@ let productos = [
     { 
         nombre: "Pegamento para Azulejos",
         categoria: "Materiales de Construcción",
-        imagen: "pegamento_azulejos.jpg",
+        imagen: "https://www.vitcas.es/uploads/TsProducts/pictures/mini2_picture_164.jpg",
         codigo: "041",
         precio: 28500,
         marca: "MarcaL",
@@ -413,7 +413,7 @@ let productos = [
     { 
         nombre: "Tubo de PVC para Drenaje",
         categoria: "Materiales de Construcción",
-        imagen: "tubo_pvc_drenaje.jpg",
+        imagen: "https://depotmx.com/wp-content/uploads/2019/05/alcanta.jpg",
         codigo: "042",
         precio: 20500,
         marca: "MarcaM",
@@ -423,7 +423,7 @@ let productos = [
     { 
         nombre: "Cinta de Medición de Obra",
         categoria: "Materiales de Construcción",
-        imagen: "cinta_medicion_obra.jpg",
+        imagen: "https://www.comercialcaro.es/FitxersWeb/135413/cinta%20metrica%201360.jpg",
         codigo: "043",
         precio: 13500,
         marca: "MarcaN",

@@ -77,7 +77,7 @@ input[type="submit"]:hover {
     background-color: #5221d8;
 }
 
-
+/* 
 .card-container {
     display: flex;
     flex-wrap: wrap; 
@@ -101,7 +101,59 @@ input[type="submit"]:hover {
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
+} */
+
+/* Nuevos */
+/* .card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    max-width: 100%;
 }
+
+.card {
+    background-color: #51476d;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    flex: 1 0 200px; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+} */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; /* Ajusta esto según cómo quieras distribuir las cartas */
+}
+
+.card {
+    background-color: #51476d;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    flex-grow: 1; /* Todas las cartas crecerán de manera uniforme */
+    max-width: 300px; /* Establece un tamaño máximo para las cartas */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 
 .pagination {
     text-align: center;
