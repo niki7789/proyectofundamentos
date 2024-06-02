@@ -11,7 +11,7 @@
         <div class="title">Registro de Producto</div>
         <nav>
             <a href="./productos.html">Lista de Productos</a>
-            <!-- <a href="#">Productos</a>] -->
+            <a href="./buscar.html">Busqueda</a>
             <!-- <a href="#">Contacto</a> -->
         </nav>
     </header>
@@ -29,10 +29,10 @@
                 </select>
                 
                 <label for="imagen">Imagen del Producto:</label>
-                <select id="categoria" name="categoria">
+                <select id="imagen" name="categoria">
                     <option value="" hidden selected>Seleccione...</option>
-                    <option value="">Imagen 1</option>
-                    <option value="">Imagen 2</option>
+                    <option value="imagen1">Imagen 1</option>
+                    <option value="imagen2">Imagen 2</option>
                 </select>
                 
                 <label for="codigo">Código de Producto:</label>
@@ -49,18 +49,12 @@
                 
                 <label for="peso">Peso</label>
                 <input type="text" id="peso" name="peso" placeholder="Escriba el peso...">
-                <!-- Agrega campos adicionales según lo requiera tu proyecto -->
                 
-                <!-- <button type="submit">Registrar Producto</button> -->
                 <input type="submit" value="Registrar Producto" onclick="insertaArreglo(event)">
-                <!-- <button type="reset">Limpiar Campos</button> -->
                 <input type="submit" onclick="limpiar()" value="Limpiar">
             </form>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Ferretería Galindo. .</p>
-    </footer>
 </div>
 
 <script src="main.js"></script> 

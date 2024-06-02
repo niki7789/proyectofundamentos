@@ -513,18 +513,18 @@ const limpiar = () => {
     document.getElementById("peso").value = "";
 }
 
-const insertaArreglo = (event) =>{
+function insertaArreglo(event){
 
     event.preventDefault();
 
-    const nombre = document.getElementById("nombre");
-    const categoria = document.getElementById("categoria");
-    const imagen = document.getElementById("imagen");
-    const codigo = document.getElementById("codigo");
-    const precio = document.getElementById("precio");
-    const marca = document.getElementById("marca");
-    const material = document.getElementById("material");
-    const peso = document.getElementById("peso");
+    const nombre = document.getElementById("nombre").value;
+    const categoria = document.getElementById("categoria").value;
+    const imagen = document.getElementById("imagen").value;
+    const codigo = document.getElementById("codigo").value;
+    const precio = document.getElementById("precio").value;
+    const marca = document.getElementById("marca").value;
+    const material = document.getElementById("material").value;
+    const peso = document.getElementById("peso").value;
 
     if (nombre && categoria && imagen && codigo && precio && marca && material && peso) {
         const nuevoValor = {
@@ -539,17 +539,143 @@ const insertaArreglo = (event) =>{
         }
 
         productos.push(nuevoValor);
-        console.log(nuevoValor);
+        
+        const productosNuevos = JSON.parse(localStorage.getItem('productos')) || [];
+        productosNuevos.push(nuevoValor);
+        localStorage.setItem('productos', JSON.stringify(productosNuevos));
 
         document.getElementById("registroForm").reset();
-
+        
         alert("Producto ingresado correctamente!!!")
     }else {
 
         alert("Llene el formulario Por favor!");
 
     }
+}
 
+const productosPorPagina = 10; 
+const mainContent = document.getElementById('main-content');
+const paginationContainer = document.getElementById('pagination');
 
+function obtenerProductosLocalStorage() {
+    return JSON.parse(localStorage.getItem('productos')) || []; // Retorna un arreglo vacío si no hay productos en el localStorage
+}
+
+function mostrarProductos(pagina) {
+    mainContent.innerHTML = ''; 
+
+    const productos = obtenerProductosLocalStorage(); // Obtiene los productos del localStorage
+
+    const inicio = (pagina - 1) * productosPorPagina;
+    const fin = inicio + productosPorPagina;
+
+    for (let i = inicio; i < fin && i < productos.length; i++) {
+        const producto = productos[i];
+
+        // Crea una carta HTML para cada producto
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        // Rellena la carta con información del producto
+        card.innerHTML = `
+            <img src="${producto.imagen}" alt="${producto.nombre}">
+            <h3>${producto.nombre}</h3>
+            <p><strong>Categoría:</strong> ${producto.categoria}</p>
+            <p><strong>Código:</strong> ${producto.codigo}</p>
+            <p><strong>Precio:</strong> $${producto.precio}</p>
+            <p><strong>Marca:</strong> ${producto.marca}</p>
+            <p><strong>Material:</strong> ${producto.material}</p>
+            <p><strong>Peso:</strong> ${producto.peso}</p>
+        `;
+
+        // Agrega la carta al contenido principal
+        mainContent.appendChild(card);
+    }
+}
+
+function mostrarPaginacion() {
+    paginationContainer.innerHTML = '';
+
+    const productos = obtenerProductosLocalStorage(); // Obtiene los productos del localStorage
+    const totalPages = Math.ceil(productos.length / productosPorPagina);
+
+    for (let i = 1; i <= totalPages; i++) {
+        const button = document.createElement('button');
+        button.innerText = i;
+        button.addEventListener('click', () => {
+            mostrarProductos(i);
+            resaltarPaginaActiva(i);
+        });
+        paginationContainer.appendChild(button);
+    }
+
+    mostrarProductos(1); 
+    resaltarPaginaActiva(1); 
+}
+
+function resaltarPaginaActiva(pagina) {
+    const buttons = paginationContainer.getElementsByTagName('button');
+    for (let button of buttons) {
+        button.classList.remove('active');
+    }
+    buttons[pagina - 1].classList.add('active');
+}
+
+// Llama a la función para mostrar la paginación al cargar la página
+document.addEventListener('DOMContentLoaded', mostrarPaginacion);
+
+// Inicializa el localStorage con los productos si está vacío
+if (!localStorage.getItem('productos')) {
+    localStorage.setItem('productos', JSON.stringify(productos));
+}
+
+// Función para obtener productos desde el localStorage
+function obtenerProductosLocalStorage() {
+    return JSON.parse(localStorage.getItem('productos')) || [];
+}
+
+document.getElementById('buscar-btn').addEventListener('click', () => {
+    const nombre = document.getElementById('buscar-nombre').value.toLowerCase();
+    const categoria = document.getElementById('buscar-categoria').value.toLowerCase();
+    const codigo = document.getElementById('buscar-codigo').value.toLowerCase();
+    const tbody = document.getElementById('resultados-body');
+
+    const productos = obtenerProductosLocalStorage(); // Obtiene productos del localStorage
+
+    tbody.innerHTML = `<tr><td colspan="8">Buscando...</td></tr>`;
+
+    setTimeout(() => {
+        const resultados = productos.filter(producto => {
+            return (
+                (nombre === "" || producto.nombre.toLowerCase().includes(nombre)) &&
+                (categoria === "" || producto.categoria.toLowerCase().includes(categoria)) &&
+                (codigo === "" || producto.codigo.toLowerCase().includes(codigo))
+            );
+        });
     
+        mostrarResultados(resultados);
+    },2000);
+});
+
+function mostrarResultados(resultados) {
+    const resultadosBody = document.getElementById('resultados-body');
+    resultadosBody.innerHTML = '';
+
+    resultados.forEach(producto => {
+        const row = document.createElement('tr');
+
+        row.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>${producto.categoria}</td>
+            <td><img src="${producto.imagen}" alt="${producto.nombre}" width="50"></td>
+            <td>${producto.codigo}</td>
+            <td>${producto.precio}</td>
+            <td>${producto.marca}</td>
+            <td>${producto.material}</td>
+            <td>${producto.peso}</td>
+        `;
+
+        resultadosBody.appendChild(row);
+    });
 }

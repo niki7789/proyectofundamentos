@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="title">Buscar Productos</div>
+        <nav>
+            <a href="./index.html">Registro de Productos</a>
+            <a href="./productos.html">Lista de Productos</a>
+        </nav>
+    </header>
+    <div id="search-container">
+        <label for="buscar-nombre">Nombre:</label>
+        <input type="text" id="buscar-nombre" placeholder="Buscar por nombre">
+        <label for="buscar-categoria">Categoría:</label>
+        <input type="text" id="buscar-categoria" placeholder="Buscar por categoría">
+        <label for="buscar-codigo">Código:</label>
+        <input type="text" id="buscar-codigo" placeholder="Buscar por código">
+        <button type="submit" id="buscar-btn">Buscar</button>
+    </div>
+    <div id="resultados-container">
+        <table id="resultados-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Imagen</th>
+                    <th>Código</th>
+                    <th>Precio</th>
+                    <th>Marca</th>
+                    <th>Material</th>
+                    <th>Peso</th>
+                </tr>
+            </thead>
+            <tbody id="resultados-body">
+                <!-- Resultados de la búsqueda aparecerán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
