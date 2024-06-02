@@ -12,7 +12,7 @@ Este es un proyecto web que consta de tres vistas principales: index, buscar y p
 
 El proyecto utiliza una base de datos emulada en un archivo JavaScript. La base de datos está representada por un array de 50 objetos, cada uno con sus propios campos y funcionalidades.
 
-Para acceder a la base de datos, puedes consultar el archivo `database.js`.
+Para acceder a la base de datos, puedes consultar el archivo `main.js`.
 
 ## Estilos
 
