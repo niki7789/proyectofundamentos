@@ -76,58 +76,30 @@ button[type="submit"]:hover,
 input[type="submit"]:hover {
     background-color: #5221d8;
 }
-
-/* 
-.card-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: flex-start; 
+.logo-container {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-.card {
-    background-color: #51476d;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(20% - 20px);
-    box-sizing: border-box;
-    float: left;
+.logo-container img {
+    width: 150px; 
+    height: auto; 
+    border: 2px solid #ccc; 
+    padding: 10px; 
+}
+.title-box {
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-} */
-
-/* Nuevos */
-/* .card-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around; 
-    max-width: 100%;
+.title-box h1 {
+    font-size: 36px;
+    font-family: Arial, sans-serif; 
 }
 
-.card {
-    background-color: #51476d;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    flex: 1 0 200px; 
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-} */
 
 .card-container {
     display: flex;
