@@ -22,4 +22,4 @@ Los estilos del proyecto están incluidos en archivos CSS separados y se aplican
 
 ---
 
-¡Gracias por revisar nuestro proyecto! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros.
+¡Gracias por revisar mi proyecto! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros.
