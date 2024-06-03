@@ -7,6 +7,8 @@ Este es un proyecto web que consta de tres vistas principales: index, buscar y p
 1. **Index**: Esta vista muestra la página principal del proyecto.
 2. **Buscar**: Aquí los usuarios pueden buscar información específica dentro del proyecto.
 3. **Productos**: Esta vista muestra una lista de productos disponibles.
+4. **indicaciones**: Esta vista muestra las indicaciones para llenar el formulario de registro del producto 
+5. **Errores**: Esta vista muestra los errores que se generan al momento de llenar mal el formulario 
 
 ## Base de Datos
 
